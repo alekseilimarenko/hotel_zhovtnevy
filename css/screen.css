@@ -300,10 +300,69 @@ caption {
 label {
     font-weight: bold;
 }
-
+fieldset {
+    border: 1px solid #CCCCCC;
+    margin: 0 0 1.5em;
+    padding: 1.4em;
+}
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+input.text, input.title, textarea, select {
+    border: 1px solid #BBBBBB;
+    margin: 0.5em 0;
+}
+input.text:focus, input.title:focus, textarea:focus, select:focus {
+    border: 1px solid #666666;
+}
+input.text, input.title {
+    padding: 5px;
+    width: 300px;
+}
+input.title {
+    font-size: 1.5em;
+}
+textarea {
+    height: 250px;
+    padding: 5px;
+    width: 390px;
+}
+.error, .notice, .success {
+    border: 2px solid #DDDDDD;
+    margin-bottom: 1em;
+    padding: 0.8em;
+}
+.error {
+    background: none repeat scroll 0 0 #FBE3E4;
+    border-color: #FBC2C4;
+    color: #8A1F11;
+}
+.notice {
+    background: none repeat scroll 0 0 #FFF6BF;
+    border-color: #FFD324;
+    color: #514721;
+}
+.success {
+    background: none repeat scroll 0 0 #E6EFC2;
+    border-color: #C6D880;
+    color: #264409;
+}
+.error a {
+    color: #8A1F11;
+}
+.notice a {
+    color: #514721;
+}
+.success a {
+    color: #264409;
+}
 .outer-wrapper {
     margin: 0 auto;
     width: 978px;
+}
+.showgrid {
+    background: url("src/grid.png") repeat scroll 0 0 transparent;
 }
 .column, div.span-1, div.span-2, div.twit-rss, div.span-4, div.span-5, div.span-6, div.span-7, div.sidecont, div.span-9, div.span-10, div.span-11, div.header-part, div.span-13, div.menu-links, div.span-15, div.postcont, div.span-17, div.span-18, div.span-19, div.span-20, div.span-21, div.span-22, div.span-23, div.outer {
     float: left;
